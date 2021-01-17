@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AllTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LargeYearTest(failed)">
+    <parameter name="year" value="3000"/>
+    <groups>
+      <run>
+        <include name="largeYearTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.timeanddate.DateCalculatorTests">
+        <methods>
+          <include name="largeyearTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.timeanddate.DateCalculatorTests -->
+    </classes>
+  </test> <!-- LargeYearTest(failed) -->
+</suite> <!-- Failed suite [AllTests] -->
